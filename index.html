@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs Personalizados</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .label {
+            padding-left: 16px;
+            border: 1px solid #CCC;
+            border-bottom-width: 2px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            gap: 2px;
+        }
+
+        .label i {
+            color: #BBB;
+        }
+
+        .label input {
+            border: none;
+            font-size: 16px;
+            padding: 8px 0;
+            padding-right: 16px;
+            padding-left: 8px;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label for="email" class="label">
+        <i class="fa-solid fa-envelope"></i>
+        <input
+               type="email"
+               name="email"
+               id="email"
+               placeholder="Input your user ID or email">
+    </label>
+
+    <label for="password" class="label">
+        <i class="fa-solid fa-unlock"></i>
+        <input
+               type="password"
+               name="password"
+               id="password"
+               placeholder="Input your password">
+    </label>
+
+    <script src="https://kit.fontawesome.com/cc3d171406.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
